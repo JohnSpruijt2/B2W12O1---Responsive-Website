@@ -7,4 +7,9 @@ nav {
     height: 10vh;
     width: 100vw;
     color: white;
+    position: sticky;
+    padding-left: 5%;
+    padding-top: 2%;
+    box-sizing: border-box;
+    font-size: 3em;
 }
