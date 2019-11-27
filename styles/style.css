@@ -1,0 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+nav {
+    background-color: yellow;
+    height: 10vh;
+    width: 100vw;
+    color: white;
+}
