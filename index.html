@@ -7,13 +7,36 @@
     <script src="https://kit.fontawesome.com/c296bd0381.js" crossorigin="anonymous"></script>
     <title>B2W12O1 - Responsive website</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
+        
 <nav>
-<i class="fas fa-bars"></i>
+        <div class="dropdown">
+                <i class="fas fa-bars" id="bigMenu" class="dropbtn" onclick="bigMenu()"></i>
+                <div class="dropdown-content" id="bigcontent">
+                  <a>Agenda</a>
+                  <a>Examen</a>
+                  <a>Lessen</a>
+                </div>
+              </div> 
 </nav>
 <header>
-    <i class="fas fa-bars"></i>
+    <div class="dropdownS">
+            <i class="fas fa-bars" id="smallMenu" class="dropbtnS" onclick="smallMenu()"></i>
+            <div class="dropdown-contentS" id="smallcontent">
+              <a>Agenda</a>
+              <a>Examen</a>
+              <a>Lessen</a>
+            </div>
+          </div> 
+    <img src="images/logo.png" alt="logo" id="logo">
 </header>
+<section>
+    <img src="images/slider1.jpg" alt="slider1" id="slider1">
+    
+</section>
+<script src="script.js"></script>
 </body>
 </html>

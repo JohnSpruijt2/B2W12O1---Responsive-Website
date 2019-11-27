@@ -2,9 +2,12 @@
     padding: 0;
     margin: 0;
 }
+body {
+    font-family: 'Archivo', sans-serif;
+}
 nav {
     background-color: yellow;
-    height: 10vh;
+    height: 1.5em;
     width: 100vw;
     color: white;
     position: sticky;
@@ -17,4 +20,85 @@ header {
     padding-left: 5%;
     padding-top: 2%;
     font-size: 2em;
+}
+
+#smallMenu {
+    color: grey;
+    border: grey solid 0.01em;
+    padding: 1.5% 3%;
+    margin-top: 6%;
+}
+#logo {
+    width: 2em;
+    float: right;
+    padding: 2% 5%;
+}
+#slider1 {
+    width: 100vw;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 2em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  #bigMenu {
+    border: white solid 0.01em;
+    padding: 1.5% 3%;
+}
+
+.dropbtnS {
+    z-index: -1;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdownS {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-contentS {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 2em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-contentS a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-contentS a:hover {background-color: #f1f1f1}
+  .dropdownS:hover .dropbtnS {
+    background-color: #3e8e41;
+  }
+  #smallMenu {
+    border: white solid 0.01em;
+    padding: 1.5% 3%;
 }
