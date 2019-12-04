@@ -155,7 +155,7 @@ button {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100vw;
   position: relative;
   margin: auto;
 }
@@ -164,27 +164,31 @@ button {
 .mySlides {
   display: none;
 }
-
+.mySlides img {
+  width: 100%;
+  height: 50%;
+  max-height: 50%;
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  margin-top: -1.5em;
+  padding: 1em;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1rem;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 0.5rem 0.5rem 0;
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -195,40 +199,27 @@ button {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
   position: absolute;
-  bottom: 8px;
+  bottom: 2rem;
   width: 100%;
   text-align: center;
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 0.7rem;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  z-index: 1;
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -249,6 +240,15 @@ button {
   display: none;
 }
 
+#dots {
+  display: none;
+}
+#computerMenu {
+  display: none;
+}
+#computerNav {
+  display: none;
+}
 @media only screen and (min-width: 1024px) {
   main button {
     display: none;
@@ -261,12 +261,13 @@ button {
   .slideshow-container {
     max-width: 100%;
     min-width: 100%;
-    max-height: 52rem;
-    min-height: 52rem;
+    max-height: 55rem;
+    min-height: 55rem;
   }
   .mySlides img {
     width: 100%;
     height: 50rem;
+    max-height: 50rem;
   }
   #smallMenu {
     display: none;
@@ -278,7 +279,18 @@ button {
     height: 1.25em;
   }
   header {
-    display: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  #logo {
+    float: left;
+    display: block;
+    z-index: 1;
+    width: 3em;
+    padding: 0;
+    margin-bottom: 1em;
+    margin-left: 2em;
   }
   .text {
     display: block;
@@ -290,5 +302,37 @@ button {
     z-index: 1;
     width: 10em;
     margin: 0 auto;
+  }
+  #computerMenu {
+    display: block;
+  }
+  #dots {
+    display: block;
+  }
+  #youtube {
+    width: 80vw;
+    height: 300px;
+    margin: 0 auto;
+    height: 80vh;
+    margin-top: 3em;
+  }
+  #sectionYoutube {
+    width: 80vw;
+    height: 60vh;
+    margin: 0 auto;
+  }
+  #computerNav {
+    display: block;
+    float: right;
+  }
+  #computerNav a{
+    width: 2em;
+    color: black;
+    font-size: 1.5vw;
+    margin-left: 5vw;
+  }
+  nav {
+    padding: 0;
+    margin: 0;
   }
 }

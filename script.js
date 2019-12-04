@@ -32,8 +32,27 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
+dot()
   window.timer = setTimeout(showSlides, 5000);
 } 
+function dot() {
+    if (slideIndex == 1) {
+        document.getElementById("dot1").style.backgroundColor = "rgb(79, 79, 79)"
+        document.getElementById("dot2").style.backgroundColor = ""
+        document.getElementById("dot3").style.backgroundColor = ""
+    }
+    else if (slideIndex == 2) {
+        document.getElementById("dot1").style.backgroundColor = ""
+        document.getElementById("dot2").style.backgroundColor = "rgb(79, 79, 79)"
+        document.getElementById("dot3").style.backgroundColor = ""
+    }
+    else if(slideIndex == 3) {
+        document.getElementById("dot1").style.backgroundColor = ""
+        document.getElementById("dot2").style.backgroundColor = ""
+        document.getElementById("dot3").style.backgroundColor = "rgb(79, 79, 79)"
+    }
+}
+
 
 function plusSlides(n) {
     clearTimeout(timer);

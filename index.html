@@ -13,6 +13,13 @@
 <body>
         
 <nav>
+    <div id="computerNav">
+        <a  class="computerIcons" id="phoneNumber"><i class="fas fa-phone"></i> (06) --- --- --</a>
+        <a class="computerIcons" id="whatsappNumber"><i class="fab fa-whatsapp"></i> (06) --- --- --</a>
+        <a class="computerIcons" id="times"><i class="far fa-clock"></i> Ma - Zo: 8:00 - 22:00</a>
+        <a class="computerIcons" id=""><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a class="computerIcons" id=""></a>
+      </div>
         <div class="dropdown">
                 <i class="fas fa-bars" id="bigMenu" class="dropbtn" onclick="bigMenu()"></i>
                 <div class="dropdown-content" id="bigcontent">
@@ -21,6 +28,7 @@
                   <a>Lessen</a>
                 </div>
               </div> 
+
 </nav>
 <br>
 <br>
@@ -36,31 +44,34 @@
             </div>
           </div> 
     <img src="images/logo.png" alt="logo" id="logo">
+    <div id="computerMenu">
+      <a>hallo je weet wel</a>
+    </div>
 </header>
 <section id="sliders">
 <div class="slideshow-container">
     <div class="mySlides fade">
-      <img src="images/slider1.jpg" style="width:100%">
+      <img src="images/slider1.jpg"  >
       <div class="text"><a id="caption1">Caption Text</a></div>
     </div>
   
     <div class="mySlides fade">
-      <img src="images/slider2.jpg" style="width:100%">
+      <img src="images/slider2.jpg"  >
       <div class="text"><a id="caption2">Caption TWO</a></div>
     </div>
   
     <div class="mySlides fade">
-      <img src="images/slider3.jpg" style="width:100%">
+      <img src="images/slider3.jpg"  >
       <div class="text"><a id="caption3">Caption THREE</a></div>
     </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
+  <div id="dots" style="text-align:center">
+    <span class="dot" id="dot1" onclick="currentSlide(3)"></span> <!--The order is strange but otherwise the images wouldn't be the proper image-->
+    <span class="dot" id="dot2" onclick="currentSlide(1)"></span>
+    <span class="dot" id="dot3" onclick="currentSlide(2)"></span>
   </div> 
     
 </section>
