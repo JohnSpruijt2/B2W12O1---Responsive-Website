@@ -52,12 +52,6 @@ function dot() {
         document.getElementById("dot3").style.backgroundColor = "rgb(79, 79, 79)"
     }
 }
-
-
-function plusSlides(n) {
-    clearTimeout(timer);
-    showSlides(slideIndex + n);
-  }
   function currentSlide(n) {
     clearTimeout(timer);
     showSlides(slideIndex = n);
