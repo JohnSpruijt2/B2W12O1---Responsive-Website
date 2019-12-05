@@ -304,4 +304,10 @@ button {
     padding: 0;
     margin: 0;
   }
+  #computerMenu a {
+    text-decoration: none;
+    color: grey;
+    font-size: 1.5vw;
+    margin-left: 2vw;
+  }
 }
