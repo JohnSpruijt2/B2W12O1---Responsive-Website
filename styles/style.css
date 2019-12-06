@@ -23,6 +23,12 @@ header {
     padding-top: 2%;
     font-size: 2em;
 }
+footer {
+  padding: 0.3rem;
+  width: 100%;
+  background-color: yellow;
+  bottom: 0px;
+}
 #logo {
     width: 2em;
     float: right;
@@ -311,11 +317,10 @@ button {
     margin: 0 auto;
     height: 80vh;
     margin-top: 3em;
+    display: inline-block;
   }
   #sectionYoutube {
-    width: 80vw;
-    height: 60vh;
-    margin: 0 auto;
+    text-align: center;
   }
   #computerNav {
     display: block;
